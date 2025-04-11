@@ -18,23 +18,23 @@ const Hero = () => {
               Vista-se com elegância, estilo e conforto na StarFit.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                className="btn-primary py-6 px-8 text-base group bg-starfit-wine hover:bg-starfit-wine/90 text-white"
-                as={Link}
-                to="/produtos"
-              >
-                Comprar agora
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button 
-                variant="outline" 
-                className="py-6 px-8 text-base text-starfit-wine border-starfit-wine hover:bg-starfit-lightPink hover:text-starfit-wine group"
-                as={Link}
-                to="/produtos"
-              >
-                Nova coleção
-                <Heart className="ml-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-              </Button>
+              <Link to="/produtos">
+                <Button 
+                  className="btn-primary py-6 px-8 text-base group bg-starfit-wine hover:bg-starfit-wine/90 text-white"
+                >
+                  Comprar agora
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
+              <Link to="/produtos">
+                <Button 
+                  variant="outline" 
+                  className="py-6 px-8 text-base text-starfit-wine border-starfit-wine hover:bg-starfit-lightPink hover:text-starfit-wine group"
+                >
+                  Nova coleção
+                  <Heart className="ml-2 h-5 w-5 group-hover:scale-110 transition-transform" />
+                </Button>
+              </Link>
             </div>
           </div>
           <div className="relative">
