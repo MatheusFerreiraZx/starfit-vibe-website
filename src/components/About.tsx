@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Heart, Award, TrendingUp } from 'lucide-react';
+import { Heart, Award, Star } from 'lucide-react';
 
 const features = [
   {
@@ -10,13 +10,13 @@ const features = [
   },
   {
     icon: <Award className="h-8 w-8 text-starfit-wine" />,
-    title: "Qualidade Garantida",
+    title: "Qualidade Premium",
     description: "Materiais de alta qualidade para maior durabilidade e conforto."
   },
   {
-    icon: <TrendingUp className="h-8 w-8 text-starfit-wine" />,
-    title: "Tendências Atuais",
-    description: "Estamos sempre atualizados com as últimas tendências fitness."
+    icon: <Star className="h-8 w-8 text-starfit-wine" />,
+    title: "Estilo Único",
+    description: "Designs exclusivos que valorizam todos os tipos de corpo."
   },
 ];
 
@@ -28,7 +28,7 @@ const About = () => {
           <div className="relative">
             <div className="absolute -top-4 -right-4 w-64 h-64 bg-starfit-lightPink rounded-full opacity-40"></div>
             <img 
-              src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+              src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
               alt="Franciele Silva" 
               className="relative z-10 rounded-lg shadow-lg"
             />
@@ -48,8 +48,8 @@ const About = () => {
             
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8">
               {features.map((feature, index) => (
-                <div key={index} className="flex flex-col items-center text-center p-4">
-                  <div className="mb-4">{feature.icon}</div>
+                <div key={index} className="flex flex-col items-center text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                  <div className="mb-4 bg-starfit-lightPink p-3 rounded-full">{feature.icon}</div>
                   <h3 className="font-bold text-lg mb-2 text-starfit-wine">{feature.title}</h3>
                   <p className="text-starfit-gray text-sm">{feature.description}</p>
                 </div>

@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Menu, X, Search, ShoppingBag, User } from 'lucide-react';
+import { Menu, X, Search, ShoppingBag, User, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
@@ -15,10 +15,13 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <a href="/" className="flex items-center">
-            <h1 className="text-2xl font-bold text-starfit-wine">
-              <span className="text-starfit-wine">Star</span>
-              <span className="font-light">Fit</span>
-            </h1>
+            <div className="flex items-center">
+              <Star className="h-5 w-5 text-starfit-wine mr-1 fill-starfit-wine" />
+              <h1 className="text-2xl font-bold">
+                <span className="text-starfit-wine">Star</span>
+                <span className="font-light">Fit</span>
+              </h1>
+            </div>
           </a>
 
           {/* Desktop Navigation */}
@@ -27,7 +30,10 @@ const Navbar = () => {
               Início
             </a>
             <a href="#categories" className="text-starfit-gray hover:text-starfit-wine font-medium transition-colors">
-              Categorias
+              Coleções
+            </a>
+            <a href="#categories" className="text-starfit-gray hover:text-starfit-wine font-medium transition-colors">
+              Novidades
             </a>
             <a href="#about" className="text-starfit-gray hover:text-starfit-wine font-medium transition-colors">
               Sobre
@@ -45,8 +51,11 @@ const Navbar = () => {
             <Button variant="ghost" size="icon" className="text-starfit-gray hover:text-starfit-wine">
               <User size={20} />
             </Button>
-            <Button variant="ghost" size="icon" className="text-starfit-gray hover:text-starfit-wine">
+            <Button variant="ghost" size="icon" className="text-starfit-gray hover:text-starfit-wine relative">
               <ShoppingBag size={20} />
+              <span className="absolute -top-1 -right-1 bg-starfit-wine text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">
+                0
+              </span>
             </Button>
           </div>
 
@@ -68,7 +77,10 @@ const Navbar = () => {
               Início
             </a>
             <a href="#categories" className="text-starfit-gray hover:text-starfit-wine font-medium transition-colors py-2">
-              Categorias
+              Coleções
+            </a>
+            <a href="#categories" className="text-starfit-gray hover:text-starfit-wine font-medium transition-colors py-2">
+              Novidades
             </a>
             <a href="#about" className="text-starfit-gray hover:text-starfit-wine font-medium transition-colors py-2">
               Sobre
@@ -84,8 +96,11 @@ const Navbar = () => {
             <Button variant="ghost" size="icon" className="text-starfit-gray hover:text-starfit-wine">
               <User size={20} />
             </Button>
-            <Button variant="ghost" size="icon" className="text-starfit-gray hover:text-starfit-wine">
+            <Button variant="ghost" size="icon" className="text-starfit-gray hover:text-starfit-wine relative">
               <ShoppingBag size={20} />
+              <span className="absolute -top-1 -right-1 bg-starfit-wine text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">
+                0
+              </span>
             </Button>
           </div>
         </div>

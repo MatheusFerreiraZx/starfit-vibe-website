@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Instagram, Facebook, Mail, MapPin, Phone } from 'lucide-react';
+import { Instagram, Facebook, Mail, MapPin, Phone, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 
@@ -11,10 +11,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Description */}
           <div className="space-y-4 md:col-span-2">
-            <h2 className="text-2xl font-bold">
-              <span>Star</span>
-              <span className="font-light">Fit</span>
-            </h2>
+            <div className="flex items-center">
+              <Star className="h-5 w-5 text-white mr-2 fill-white" />
+              <h2 className="text-2xl font-bold">
+                <span>Star</span>
+                <span className="font-light">Fit</span>
+              </h2>
+            </div>
             <p className="text-white/80 max-w-md">
               Moda fitness para todos os corpos. Do P ao Plus Size, roupas para academia, 
               corrida e outras atividades físicas com qualidade e estilo.
@@ -37,7 +40,7 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-4">Links Rápidos</h3>
             <ul className="space-y-2">
               <li><a href="/" className="text-white/80 hover:text-white transition-colors">Início</a></li>
-              <li><a href="#categories" className="text-white/80 hover:text-white transition-colors">Categorias</a></li>
+              <li><a href="#categories" className="text-white/80 hover:text-white transition-colors">Coleções</a></li>
               <li><a href="#about" className="text-white/80 hover:text-white transition-colors">Sobre</a></li>
               <li><a href="#" className="text-white/80 hover:text-white transition-colors">Contato</a></li>
               <li><a href="#" className="text-white/80 hover:text-white transition-colors">Política de Privacidade</a></li>
@@ -50,11 +53,11 @@ const Footer = () => {
             <div className="space-y-3">
               <p className="flex items-center text-white/80">
                 <MapPin className="mr-2 h-5 w-5 text-white/60" />
-                <span>São Paulo, SP</span>
+                <span>Recife, PE</span>
               </p>
               <p className="flex items-center text-white/80">
                 <Phone className="mr-2 h-5 w-5 text-white/60" />
-                <span>(11) 9xxxx-xxxx</span>
+                <span>(81) 9xxxx-xxxx</span>
               </p>
               <p className="flex items-center text-white/80">
                 <Mail className="mr-2 h-5 w-5 text-white/60" />
