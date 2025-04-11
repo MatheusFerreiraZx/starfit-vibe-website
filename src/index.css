@@ -94,6 +94,7 @@
 
   body {
     @apply bg-background text-foreground font-sans;
+    scroll-behavior: smooth;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -107,11 +108,11 @@
   }
   
   .btn-primary {
-    @apply bg-starfit-wine text-white hover:bg-starfit-lightWine transition-colors duration-300 font-medium rounded-md;
+    @apply bg-starfit-wine text-white hover:bg-starfit-lightWine transition-colors duration-300 font-medium rounded-full;
   }
   
   .btn-secondary {
-    @apply bg-starfit-lightPink text-starfit-wine hover:bg-opacity-80 transition-colors duration-300 font-medium rounded-md;
+    @apply bg-starfit-lightPink text-starfit-wine hover:bg-opacity-80 transition-colors duration-300 font-medium rounded-full;
   }
   
   .section-title {
@@ -121,4 +122,44 @@
   .section-subtitle {
     @apply text-lg text-starfit-gray mb-8 max-w-3xl mx-auto;
   }
+
+  .product-card {
+    @apply bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300;
+  }
+
+  .product-tag {
+    @apply absolute top-2 right-2 bg-starfit-wine text-white text-xs py-1 px-3 rounded-full;
+  }
+
+  .btn-outline-pink {
+    @apply border border-starfit-wine text-starfit-wine hover:bg-starfit-lightPink transition-colors duration-300 rounded-full;
+  }
+}
+
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s ease-in-out infinite;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out;
 }
