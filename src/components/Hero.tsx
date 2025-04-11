@@ -20,7 +20,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/produtos">
                 <Button 
-                  className="btn-primary py-6 px-8 text-base group bg-starfit-wine hover:bg-starfit-wine/90 text-white"
+                  className="btn-primary py-6 px-8 text-base group bg-starfit-wine hover:bg-starfit-lightWine text-white"
                 >
                   Comprar agora
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />

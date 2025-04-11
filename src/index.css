@@ -16,24 +16,24 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 344 100% 27%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 336 100% 65%; /* Updated to pink */
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 348 30% 92%;
-    --secondary-foreground: 344 100% 27%;
+    --secondary: 335 30% 92%; /* Updated to lighter pink */
+    --secondary-foreground: 336 80% 50%; /* Updated to darker pink */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 335 20% 95%;
+    --muted-foreground: 335 10% 45%;
 
-    --accent: 348 30% 92%;
-    --accent-foreground: 344 100% 27%;
+    --accent: 335 30% 92%;
+    --accent-foreground: 336 80% 50%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 344 100% 27%;
+    --border: 335 30% 90%;
+    --input: 335 30% 90%;
+    --ring: 336 80% 65%;
 
     --radius: 0.5rem;
 
@@ -57,24 +57,25 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 336 100% 65%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 335 50% 25%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 335 50% 25%;
+    --muted-foreground: 335 30% 70%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 335 50% 25%;
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 335 50% 25%;
+    --input: 335 50% 25%;
+    --ring: 336 80% 65%;
+    
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

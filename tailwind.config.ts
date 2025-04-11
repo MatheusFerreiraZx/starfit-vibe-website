@@ -63,13 +63,13 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// StarFit custom colors
+				// StarFit custom colors - Updated to pink palette
 				starfit: {
-					wine: '#8B0024',
-					lightWine: '#A30029',
-					lightPink: '#F4E1E5',
-					white: '#FFFFFF',
-					gray: '#333333'
+					wine: '#FF4D8D',           // Bright pink instead of wine
+					lightWine: '#FF6FA3',      // Lighter bright pink 
+					lightPink: '#FFDEE2',      // Very light pink
+					white: '#FFFFFF',          // Keeping white
+					gray: '#333333'            // Keeping dark gray
 				}
 			},
 			borderRadius: {
