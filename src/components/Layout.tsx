@@ -16,7 +16,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         {children}
       </main>
       <Footer />
-      <FloatingWhatsApp phoneNumber="5581999999999" />
+      <FloatingWhatsApp phoneNumber="5581995382724" />
     </div>
   );
 };

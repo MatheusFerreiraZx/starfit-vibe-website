@@ -45,7 +45,7 @@ const Contato = () => {
                     <Phone className="h-5 w-5 text-starfit-wine mr-3 mt-1" />
                     <div>
                       <h3 className="font-medium text-starfit-gray">Telefone</h3>
-                      <p className="text-starfit-gray">(81) 9xxxx-xxxx</p>
+                      <p className="text-starfit-gray">(81) 99538-2724</p>
                     </div>
                   </div>
                   
@@ -82,7 +82,7 @@ const Contato = () => {
                 </div>
                 
                 <div className="mt-8">
-                  <WhatsAppButton phoneNumber="5581999999999" className="w-full" />
+                  <WhatsAppButton phoneNumber="5581995382724" className="w-full" />
                 </div>
               </div>
             </div>
