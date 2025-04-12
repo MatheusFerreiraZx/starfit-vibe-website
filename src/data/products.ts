@@ -72,28 +72,6 @@ export const products: Product[] = [
     inStock: true
   },
   {
-    id: "7",
-    name: "Meia Esportiva Pack com 3",
-    description: "Kit com 3 pares de meias esportivas acolchoadas.",
-    price: 39.90,
-    image: "https://images.unsplash.com/photo-1586350977771-b3d0a0fcf239?q=80&w=1920&auto=format&fit=crop",
-    category: "acessorios",
-    sizes: ["34-38", "39-42"],
-    colors: ["Mix"],
-    inStock: true
-  },
-  {
-    id: "8",
-    name: "Bolsa Fitness",
-    description: "Bolsa espaçosa com compartimentos organizadores para academia.",
-    price: 89.90,
-    image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=1920&auto=format&fit=crop",
-    category: "acessorios",
-    sizes: ["Único"],
-    colors: ["Preto", "Rosa"],
-    inStock: true
-  },
-  {
     id: "9",
     name: "Legging Estampada",
     description: "Legging com estampa exclusiva e tecido de alta performance.",
@@ -158,28 +136,6 @@ export const products: Product[] = [
     category: "casacos",
     sizes: ["P", "M", "G", "GG"],
     colors: ["Cinza", "Preto", "Rosa"],
-    inStock: true
-  },
-  {
-    id: "15",
-    name: "Garrafa Squeeze 750ml",
-    description: "Garrafa esportiva de alta qualidade com marca-volume e vedação perfeita.",
-    price: 49.90,
-    image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?q=80&w=1972&auto=format&fit=crop",
-    category: "acessorios",
-    sizes: ["Único"],
-    colors: ["Rosa", "Preto", "Transparente"],
-    inStock: true
-  },
-  {
-    id: "16",
-    name: "Luvas de Treino",
-    description: "Luvas para proteção das mãos durante treinos de musculação.",
-    price: 59.90,
-    image: "https://images.unsplash.com/photo-1531917115039-e3ef2bdcced4?q=80&w=2070&auto=format&fit=crop",
-    category: "acessorios",
-    sizes: ["P", "M", "G"],
-    colors: ["Preto", "Rosa"],
     inStock: true
   }
 ];

@@ -36,13 +36,10 @@ const Navbar = () => {
             <Link to="/produtos" className="text-starfit-gray hover:text-starfit-wine font-medium transition-colors">
               Coleções
             </Link>
-            <Link to="/produtos" className="text-starfit-gray hover:text-starfit-wine font-medium transition-colors">
-              Novidades
-            </Link>
             <Link to="/#about" className="text-starfit-gray hover:text-starfit-wine font-medium transition-colors">
               Sobre
             </Link>
-            <Link to="/#" className="text-starfit-gray hover:text-starfit-wine font-medium transition-colors">
+            <Link to="/contato" className="text-starfit-gray hover:text-starfit-wine font-medium transition-colors">
               Contato
             </Link>
           </nav>
@@ -88,13 +85,10 @@ const Navbar = () => {
             <Link to="/produtos" className="text-starfit-gray hover:text-starfit-wine font-medium transition-colors py-2">
               Coleções
             </Link>
-            <Link to="/produtos" className="text-starfit-gray hover:text-starfit-wine font-medium transition-colors py-2">
-              Novidades
-            </Link>
             <Link to="/#about" className="text-starfit-gray hover:text-starfit-wine font-medium transition-colors py-2">
               Sobre
             </Link>
-            <Link to="/#" className="text-starfit-gray hover:text-starfit-wine font-medium transition-colors py-2">
+            <Link to="/contato" className="text-starfit-gray hover:text-starfit-wine font-medium transition-colors py-2">
               Contato
             </Link>
           </nav>
