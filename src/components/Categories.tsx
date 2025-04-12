@@ -40,16 +40,16 @@ const categories: CategoryCard[] = [
 
 const Categories = () => {
   return (
-    <section id="categories" className="py-16 md:py-24 bg-white">
+    <section id="categories" className="py-12 md:py-16 bg-gray-50">
       <div className="starfit-container">
         <h2 className="section-title text-center">Nossas Coleções</h2>
         <p className="section-subtitle text-center">
           Encontre as melhores peças para seu estilo e bem-estar
         </p>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
           {categories.map((category, index) => (
-            <Link to={category.link} key={index}>
+            <Link to={category.link} key={index} className="block">
               <Card className="overflow-hidden group hover:shadow-lg transition-all duration-300 border-none">
                 <div className="relative overflow-hidden h-80">
                   <img 

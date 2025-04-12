@@ -92,5 +92,94 @@ export const products: Product[] = [
     sizes: ["Único"],
     colors: ["Preto", "Rosa"],
     inStock: true
+  },
+  {
+    id: "9",
+    name: "Legging Estampada",
+    description: "Legging com estampa exclusiva e tecido de alta performance.",
+    price: 119.90,
+    image: "https://images.unsplash.com/photo-1581095063430-2ae38708e1ed?q=80&w=1974&auto=format&fit=crop",
+    category: "leggings",
+    sizes: ["P", "M", "G", "GG"],
+    colors: ["Estampa Tropical", "Estampa Geométrica"],
+    inStock: true,
+    featured: true
+  },
+  {
+    id: "10",
+    name: "Top Crossback",
+    description: "Top com alças cruzadas nas costas para maior suporte e liberdade de movimento.",
+    price: 79.90,
+    image: "https://images.unsplash.com/photo-1562886877-3807be41d131?q=80&w=1974&auto=format&fit=crop",
+    category: "tops",
+    sizes: ["P", "M", "G"],
+    colors: ["Preto", "Azul", "Rosa"],
+    inStock: true
+  },
+  {
+    id: "11",
+    name: "Shorts Duplo",
+    description: "Shorts com tecido duplo, perfeito para atividades de alto impacto.",
+    price: 89.90,
+    image: "https://images.unsplash.com/photo-1580906853203-f13ea2c87a3b?q=80&w=1974&auto=format&fit=crop",
+    category: "shorts",
+    sizes: ["P", "M", "G", "GG"],
+    colors: ["Preto", "Cinza"],
+    inStock: true
+  },
+  {
+    id: "12",
+    name: "Camiseta Manga Longa",
+    description: "Camiseta com proteção UV e manga longa para atividades ao ar livre.",
+    price: 79.90,
+    image: "https://images.unsplash.com/photo-1519098901909-b1553a1190af?q=80&w=1974&auto=format&fit=crop",
+    category: "camisetas",
+    sizes: ["P", "M", "G", "GG"],
+    colors: ["Branco", "Preto", "Cinza"],
+    inStock: true
+  },
+  {
+    id: "13",
+    name: "Conjunto Cropped e Shorts",
+    description: "Conjunto moderno com cropped e shorts para treinos leves ou uso casual.",
+    price: 139.90,
+    image: "https://images.unsplash.com/photo-1528638158811-389f5c3c340c?q=80&w=1932&auto=format&fit=crop",
+    category: "conjuntos",
+    sizes: ["P", "M", "G"],
+    colors: ["Preto", "Rosa", "Azul"],
+    inStock: true
+  },
+  {
+    id: "14",
+    name: "Casaco Moletom",
+    description: "Casaco em moletom perfeito para dias mais frios ou pós-treino.",
+    price: 119.90,
+    image: "https://images.unsplash.com/photo-1618522387969-5e9f89235770?q=80&w=1974&auto=format&fit=crop",
+    category: "casacos",
+    sizes: ["P", "M", "G", "GG"],
+    colors: ["Cinza", "Preto", "Rosa"],
+    inStock: true
+  },
+  {
+    id: "15",
+    name: "Garrafa Squeeze 750ml",
+    description: "Garrafa esportiva de alta qualidade com marca-volume e vedação perfeita.",
+    price: 49.90,
+    image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?q=80&w=1972&auto=format&fit=crop",
+    category: "acessorios",
+    sizes: ["Único"],
+    colors: ["Rosa", "Preto", "Transparente"],
+    inStock: true
+  },
+  {
+    id: "16",
+    name: "Luvas de Treino",
+    description: "Luvas para proteção das mãos durante treinos de musculação.",
+    price: 59.90,
+    image: "https://images.unsplash.com/photo-1531917115039-e3ef2bdcced4?q=80&w=2070&auto=format&fit=crop",
+    category: "acessorios",
+    sizes: ["P", "M", "G"],
+    colors: ["Preto", "Rosa"],
+    inStock: true
   }
 ];

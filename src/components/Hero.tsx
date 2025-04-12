@@ -22,7 +22,7 @@ const Hero = () => {
                 <Button 
                   className="btn-primary py-6 px-8 text-base group bg-starfit-wine hover:bg-starfit-lightWine text-white rounded-full"
                 >
-                  Comprar agora
+                  Ver catálogo
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
