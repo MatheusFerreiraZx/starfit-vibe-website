@@ -137,5 +137,74 @@ export const products: Product[] = [
     sizes: ["P", "M", "G", "GG"],
     colors: ["Cinza", "Preto", "Rosa"],
     inStock: true
+  },
+  // Adding more clothing items
+  {
+    id: "15",
+    name: "Legging Sculpt",
+    description: "Legging modeladora com tecnologia de compressão para definir e valorizar o corpo.",
+    price: 129.90,
+    image: "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?q=80&w=1974&auto=format&fit=crop",
+    category: "leggings",
+    sizes: ["P", "M", "G", "GG"],
+    colors: ["Preto", "Azul Marinho", "Cinza"],
+    inStock: true,
+    featured: true
+  },
+  {
+    id: "16",
+    name: "Top Support Max",
+    description: "Top de alta sustentação para atividades de alto impacto como corrida e crossfit.",
+    price: 89.90,
+    image: "https://images.unsplash.com/photo-1594051673969-172a6f467542?q=80&w=1974&auto=format&fit=crop",
+    category: "tops",
+    sizes: ["P", "M", "G", "GG"],
+    colors: ["Preto", "Turquesa", "Coral"],
+    inStock: true
+  },
+  {
+    id: "17",
+    name: "Shorts Cycling",
+    description: "Shorts de ciclismo com acolchoamento para conforto durante pedaladas longas.",
+    price: 99.90,
+    image: "https://images.unsplash.com/photo-1539186607619-df476afe6ff1?q=80&w=1974&auto=format&fit=crop",
+    category: "shorts",
+    sizes: ["P", "M", "G", "GG"],
+    colors: ["Preto", "Azul"],
+    inStock: true
+  },
+  {
+    id: "18",
+    name: "Regata Performance",
+    description: "Regata leve e respirável para dias quentes, ideal para corrida e treinos intensos.",
+    price: 59.90,
+    image: "https://images.unsplash.com/photo-1529346378278-46d2c593243f?q=80&w=1974&auto=format&fit=crop",
+    category: "camisetas",
+    sizes: ["P", "M", "G", "GG"],
+    colors: ["Branco", "Rosa", "Verde Neon"],
+    inStock: true
+  },
+  {
+    id: "19",
+    name: "Conjunto Yoga Flow",
+    description: "Conjunto de top e legging em tecido suave e elástico, perfeito para yoga e pilates.",
+    price: 149.90,
+    image: "https://images.unsplash.com/photo-1581299894007-aaa50297cf16?q=80&w=1974&auto=format&fit=crop",
+    category: "conjuntos",
+    sizes: ["P", "M", "G"],
+    colors: ["Lavanda", "Verde Água", "Bege"],
+    inStock: true
+  },
+  {
+    id: "20",
+    name: "Jaqueta Térmica",
+    description: "Jaqueta com tecnologia térmica para proteção em atividades ao ar livre em dias frios.",
+    price: 169.90,
+    image: "https://images.unsplash.com/photo-1564257631407-4deb1f99d992?q=80&w=1974&auto=format&fit=crop",
+    category: "casacos",
+    sizes: ["P", "M", "G", "GG"],
+    colors: ["Preto", "Azul", "Bordô"],
+    inStock: true,
+    featured: true
   }
 ];
