@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Instagram, Facebook, Mail, MapPin, Phone, Star, Heart } from 'lucide-react';
+import { Instagram, Mail, MapPin, Phone, Star, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Link } from 'react-router-dom';
@@ -26,9 +25,6 @@ const Footer = () => {
             <div className="flex space-x-3 mt-4">
               <Button variant="ghost" size="icon" className="text-white hover:text-white hover:bg-white/20 rounded-full">
                 <Instagram size={20} />
-              </Button>
-              <Button variant="ghost" size="icon" className="text-white hover:text-white hover:bg-white/20 rounded-full">
-                <Facebook size={20} />
               </Button>
               <Button variant="ghost" size="icon" className="text-white hover:text-white hover:bg-white/20 rounded-full">
                 <Mail size={20} />

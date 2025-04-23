@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Product } from '@/types/product';
 import { ShoppingBag, Heart } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { useFavorites } from '@/contexts/FavoritesContext';
 
 interface ProductCardProps {
   product: Product;
@@ -12,9 +13,18 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const navigate = useNavigate();
+  const { addToFavorites, removeFromFavorites, isFavorite } = useFavorites();
   
   const handleViewDetails = () => {
     navigate(`/produtos/${product.id}`);
+  };
+  
+  const handleFavoriteClick = () => {
+    if (isFavorite(product.id)) {
+      removeFromFavorites(product.id);
+    } else {
+      addToFavorites(product);
+    }
   };
   
   const formatPrice = (price: number) => {
@@ -28,10 +38,13 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     <Card className="group overflow-hidden transition-all duration-300 hover:shadow-md border border-gray-100">
       <div className="relative overflow-hidden">
         <button 
+          onClick={handleFavoriteClick}
           className="absolute top-3 right-3 z-10 bg-white p-1.5 rounded-full shadow-sm hover:bg-gray-50"
           aria-label="Adicionar aos favoritos"
         >
-          <Heart className="h-4 w-4 text-starfit-wine" />
+          <Heart 
+            className={`h-4 w-4 ${isFavorite(product.id) ? 'fill-starfit-wine' : ''} text-starfit-wine`}
+          />
         </button>
         
         <div className="aspect-[3/4] overflow-hidden">
