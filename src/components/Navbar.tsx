@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { Link, useNavigate } from 'react-router-dom';
 import { useFavorites } from '@/contexts/FavoritesContext';
+import { useCart } from '@/contexts/CartContext';
 import {
   Dialog,
   DialogContent,
@@ -19,6 +20,7 @@ const Navbar = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState<typeof products>([]);
   const { favorites } = useFavorites();
+  const { totalItems } = useCart();
   const navigate = useNavigate();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -99,9 +101,11 @@ const Navbar = () => {
             <Link to="/carrinho">
               <Button variant="ghost" size="icon" className="text-starfit-gray hover:text-starfit-wine relative">
                 <ShoppingBag size={20} />
-                <span className="absolute -top-1 -right-1 bg-starfit-wine text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
-                  0
-                </span>
+                {totalItems > 0 && (
+                  <span className="absolute -top-1 -right-1 bg-starfit-wine text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                    {totalItems}
+                  </span>
+                )}
               </Button>
             </Link>
           </div>

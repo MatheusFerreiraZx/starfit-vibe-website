@@ -1,5 +1,5 @@
-
 import React from 'react';
+import Layout from '@/components/Layout';
 import { useCart } from '@/contexts/CartContext';
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
@@ -38,128 +38,130 @@ const Cart = () => {
   }
 
   return (
-    <div className="py-12 px-4 md:px-0">
-      <div className="starfit-container max-w-6xl mx-auto">
-        <h1 className="text-3xl font-bold text-starfit-wine mb-8 font-display">Meu Carrinho</h1>
-        
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div className="lg:col-span-2">
-            <div className="bg-white rounded-lg shadow-sm p-6 space-y-6">
-              <div className="flex justify-between items-center border-b pb-4">
-                <h2 className="font-semibold text-lg">Produtos</h2>
-                <Button 
-                  variant="ghost" 
-                  size="sm" 
-                  onClick={clearCart}
-                  className="text-red-500 hover:text-red-700 hover:bg-red-50"
-                >
-                  <Trash2 className="h-4 w-4 mr-2" />
-                  Limpar
-                </Button>
-              </div>
-              
-              {items.map((item) => (
-                <div key={`${item.id}-${item.selectedSize}-${item.selectedColor}`} className="flex flex-col md:flex-row gap-4 border-b pb-6">
-                  <div className="w-full md:w-24 h-24 overflow-hidden rounded-md">
-                    <img 
-                      src={item.image} 
-                      alt={item.name} 
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  
-                  <div className="flex-1">
-                    <div className="flex justify-between">
-                      <h3 className="font-medium">{item.name}</h3>
-                      <p className="font-semibold">{formatPrice(item.price * item.quantity)}</p>
+    <Layout>
+      <div className="starfit-container py-8">
+        <div className="starfit-container max-w-6xl mx-auto">
+          <h1 className="text-3xl font-bold text-starfit-wine mb-8 font-display">Meu Carrinho</h1>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="lg:col-span-2">
+              <div className="bg-white rounded-lg shadow-sm p-6 space-y-6">
+                <div className="flex justify-between items-center border-b pb-4">
+                  <h2 className="font-semibold text-lg">Produtos</h2>
+                  <Button 
+                    variant="ghost" 
+                    size="sm" 
+                    onClick={clearCart}
+                    className="text-red-500 hover:text-red-700 hover:bg-red-50"
+                  >
+                    <Trash2 className="h-4 w-4 mr-2" />
+                    Limpar
+                  </Button>
+                </div>
+                
+                {items.map((item) => (
+                  <div key={`${item.id}-${item.selectedSize}-${item.selectedColor}`} className="flex flex-col md:flex-row gap-4 border-b pb-6">
+                    <div className="w-full md:w-24 h-24 overflow-hidden rounded-md">
+                      <img 
+                        src={item.image} 
+                        alt={item.name} 
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                     
-                    <div className="mt-1 text-sm text-starfit-gray">
-                      <p>Tamanho: {item.selectedSize}</p>
-                      <p>Cor: {item.selectedColor}</p>
-                    </div>
-                    
-                    <div className="flex justify-between items-center mt-4">
-                      <div className="flex items-center border rounded-md w-32">
-                        <button 
-                          onClick={() => updateQuantity(item.id, item.quantity - 1)}
-                          className="px-3 py-1 border-r" 
-                          disabled={item.quantity <= 1}
-                        >
-                          -
-                        </button>
-                        <span className="flex-1 text-center">{item.quantity}</span>
-                        <button 
-                          onClick={() => updateQuantity(item.id, item.quantity + 1)}
-                          className="px-3 py-1 border-l"
-                        >
-                          +
-                        </button>
+                    <div className="flex-1">
+                      <div className="flex justify-between">
+                        <h3 className="font-medium">{item.name}</h3>
+                        <p className="font-semibold">{formatPrice(item.price * item.quantity)}</p>
                       </div>
                       
-                      <Button 
-                        variant="ghost" 
-                        size="sm" 
-                        onClick={() => removeItem(item.id)}
-                        className="text-red-500 hover:text-red-700 hover:bg-red-50"
-                      >
-                        <Trash2 className="h-4 w-4 mr-1" />
-                        Remover
-                      </Button>
+                      <div className="mt-1 text-sm text-starfit-gray">
+                        <p>Tamanho: {item.selectedSize}</p>
+                        <p>Cor: {item.selectedColor}</p>
+                      </div>
+                      
+                      <div className="flex justify-between items-center mt-4">
+                        <div className="flex items-center border rounded-md w-32">
+                          <button 
+                            onClick={() => updateQuantity(item.id, item.quantity - 1)}
+                            className="px-3 py-1 border-r" 
+                            disabled={item.quantity <= 1}
+                          >
+                            -
+                          </button>
+                          <span className="flex-1 text-center">{item.quantity}</span>
+                          <button 
+                            onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                            className="px-3 py-1 border-l"
+                          >
+                            +
+                          </button>
+                        </div>
+                        
+                        <Button 
+                          variant="ghost" 
+                          size="sm" 
+                          onClick={() => removeItem(item.id)}
+                          className="text-red-500 hover:text-red-700 hover:bg-red-50"
+                        >
+                          <Trash2 className="h-4 w-4 mr-1" />
+                          Remover
+                        </Button>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            
+            <div>
+              <div className="bg-white rounded-lg shadow-sm p-6 space-y-6 sticky top-8">
+                <h2 className="font-semibold text-lg border-b pb-4">Resumo do Pedido</h2>
+                
+                <div className="space-y-2">
+                  <div className="flex justify-between">
+                    <span>Subtotal</span>
+                    <span>{formatPrice(subtotal)}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Frete</span>
+                    <span>A calcular</span>
+                  </div>
+                </div>
+                
+                <div className="border-t pt-4">
+                  <div className="space-y-4">
+                    <div className="flex justify-between font-bold text-lg">
+                      <span>Total</span>
+                      <span>{formatPrice(subtotal)}</span>
+                    </div>
+                    <div className="text-xs text-starfit-gray text-right">
+                      ou em até 10x de {formatPrice(subtotal / 10)} sem juros
                     </div>
                   </div>
                 </div>
-              ))}
-            </div>
-          </div>
-          
-          <div>
-            <div className="bg-white rounded-lg shadow-sm p-6 space-y-6 sticky top-8">
-              <h2 className="font-semibold text-lg border-b pb-4">Resumo do Pedido</h2>
-              
-              <div className="space-y-2">
-                <div className="flex justify-between">
-                  <span>Subtotal</span>
-                  <span>{formatPrice(subtotal)}</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Frete</span>
-                  <span>A calcular</span>
-                </div>
+                
+                <Button 
+                  onClick={() => navigate('/checkout')} 
+                  className="w-full py-6 bg-starfit-wine hover:bg-starfit-wine/90 text-white"
+                >
+                  Finalizar Compra
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+                
+                <Button 
+                  variant="outline" 
+                  onClick={() => navigate('/produtos')} 
+                  className="w-full"
+                >
+                  Continuar Comprando
+                </Button>
               </div>
-              
-              <div className="border-t pt-4">
-                <div className="space-y-4">
-                  <div className="flex justify-between font-bold text-lg">
-                    <span>Total</span>
-                    <span>{formatPrice(subtotal)}</span>
-                  </div>
-                  <div className="text-xs text-starfit-gray text-right">
-                    ou em até 10x de {formatPrice(subtotal / 10)} sem juros
-                  </div>
-                </div>
-              </div>
-              
-              <Button 
-                onClick={() => navigate('/checkout')} 
-                className="w-full py-6 bg-starfit-wine hover:bg-starfit-wine/90 text-white"
-              >
-                Finalizar Compra
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-              
-              <Button 
-                variant="outline" 
-                onClick={() => navigate('/produtos')} 
-                className="w-full"
-              >
-                Continuar Comprando
-              </Button>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 
