@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -15,6 +14,8 @@ import Contato from "./pages/Contato";
 import Favoritos from "./pages/Favoritos";
 import { CartProvider } from "./contexts/CartContext";
 import { FavoritesProvider } from "./contexts/FavoritesContext";
+import Sobre from "./pages/Sobre";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 const queryClient = new QueryClient();
 
@@ -35,6 +36,8 @@ const App = () => (
               <Route path="/compra-finalizada" element={<OrderCompleted />} />
               <Route path="/contato" element={<Contato />} />
               <Route path="/favoritos" element={<Favoritos />} />
+              <Route path="/politica-de-privacidade" element={<PrivacyPolicy />} />
+              <Route path="/sobre" element={<Sobre />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </BrowserRouter>

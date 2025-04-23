@@ -54,10 +54,13 @@ const Navbar = () => {
           <Link to="/" className="flex items-center">
             <div className="flex items-center">
               <Star className="h-6 w-6 text-starfit-wine mr-1 fill-starfit-wine" />
-              <h1 className="text-3xl font-bold">
-                <span className="text-starfit-wine">Star</span>
-                <span className="font-light">Fit</span>
-              </h1>
+              <div className="flex flex-col">
+                <h1 className="text-3xl font-bold">
+                  <span className="text-starfit-wine">Star</span>
+                  <span className="font-light">Fit</span>
+                </h1>
+                <span className="text-xs text-starfit-gray -mt-1">Moda Fitness</span>
+              </div>
             </div>
           </Link>
 
