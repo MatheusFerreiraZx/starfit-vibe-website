@@ -8,7 +8,7 @@ type CategoryCard = {
   title: string;
   description: string;
   image: string;
-  link: string;
+  category: string;
 };
 
 const categories: CategoryCard[] = [
@@ -16,25 +16,25 @@ const categories: CategoryCard[] = [
     title: "Roupas P ao M",
     description: "Moda fitness para todos os tipos de corpo",
     image: "https://images.unsplash.com/photo-1571731956672-f2b94d7dd0cb?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    link: "/produtos"
+    category: "leggings"
   },
   {
     title: "Plus Size",
     description: "Conforto e estilo para todas as mulheres",
     image: "https://images.unsplash.com/photo-1596357395916-c7ec0456c825?q=80&w=1971&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    link: "/produtos"
+    category: "plus-size"
   },
   {
     title: "Academia",
     description: "Peças perfeitas para seu treino",
     image: "https://images.unsplash.com/photo-1595078475328-1ab05d0a6a0e?q=80&w=1900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    link: "/produtos"
+    category: "tops"
   },
   {
     title: "Corrida",
     description: "Desempenho e estilo para quem corre",
     image: "https://images.unsplash.com/photo-1538805060514-97d9cc17730c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    link: "/produtos"
+    category: "running"
   },
 ];
 
@@ -49,7 +49,7 @@ const Categories = () => {
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
           {categories.map((category, index) => (
-            <Link to={category.link} key={index} className="block">
+            <Link to={`/produtos?categoria=${category.category}`} key={index} className="block">
               <Card className="overflow-hidden group hover:shadow-lg transition-all duration-300 border-none">
                 <div className="relative overflow-hidden h-80">
                   <img 

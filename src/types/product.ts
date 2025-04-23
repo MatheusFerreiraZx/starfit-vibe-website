@@ -5,7 +5,7 @@ export interface Product {
   description: string;
   price: number;
   image: string;
-  category: string;
+  category: string;  // Now includes 'running' and 'plus-size' as possible values
   sizes: string[];
   colors: string[];
   inStock: boolean;

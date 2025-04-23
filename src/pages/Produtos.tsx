@@ -1,5 +1,4 @@
-
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { products } from '@/data/products';
 import ProductCard from '@/components/ProductCard';
 import { Input } from '@/components/ui/input';
@@ -10,6 +9,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Search, Filter, X, Sliders } from 'lucide-react';
 import { Pagination, PaginationContent, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from '@/components/ui/pagination';
 import Layout from '@/components/Layout';
+import { useLocation } from 'react-router-dom';
 
 const categories = [
   { id: 'all', name: 'Todos' },
@@ -44,6 +44,18 @@ const Produtos = () => {
   const [showMobileFilters, setShowMobileFilters] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 8;
+  
+  // Get category from URL params
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const categoryParam = queryParams.get('categoria');
+  
+  // Set initial category from URL params
+  useEffect(() => {
+    if (categoryParam) {
+      setSelectedCategory(categoryParam);
+    }
+  }, [categoryParam]);
   
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(e.target.value);
@@ -106,12 +118,15 @@ const Produtos = () => {
     setCurrentPage(1);
   };
   
-  // Filter products based on all criteria
+  // Update filtered products to include category param
   const filteredProducts = products.filter(product => {
     const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
                           product.description.toLowerCase().includes(searchQuery.toLowerCase());
     
-    const matchesCategory = selectedCategory === 'all' || product.category === selectedCategory;
+    const matchesCategory = selectedCategory === 'all' || 
+                          (selectedCategory === 'running' && product.category === 'running') ||
+                          (selectedCategory === 'plus-size' && product.category === 'plus-size') ||
+                          (selectedCategory === product.category);
     
     const matchesSizes = selectedSizes.length === 0 || 
                           selectedSizes.some(size => product.sizes.includes(size));

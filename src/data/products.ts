@@ -1,4 +1,3 @@
-
 import { Product } from "@/types/product";
 
 export const products: Product[] = [
@@ -138,7 +137,6 @@ export const products: Product[] = [
     colors: ["Cinza", "Preto", "Rosa"],
     inStock: true
   },
-  // Adding more clothing items
   {
     id: "15",
     name: "Legging Sculpt",
@@ -204,6 +202,52 @@ export const products: Product[] = [
     category: "casacos",
     sizes: ["P", "M", "G", "GG"],
     colors: ["Preto", "Azul", "Bordô"],
+    inStock: true,
+    featured: true
+  },
+  {
+    id: "21",
+    name: "Legging Running Performance",
+    description: "Legging especial para corrida com tecnologia de compressão e bolsos laterais.",
+    price: 149.90,
+    image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=2102&auto=format&fit=crop",
+    category: "running",
+    sizes: ["P", "M", "G", "GG"],
+    colors: ["Preto", "Azul", "Rosa"],
+    inStock: true,
+    featured: true
+  },
+  {
+    id: "22",
+    name: "Top Running Pro",
+    description: "Top específico para corrida com suporte máximo e tecnologia anti-suor.",
+    price: 89.90,
+    image: "https://images.unsplash.com/photo-1518459031867-a89b944bffe4?q=80&w=2101&auto=format&fit=crop",
+    category: "running",
+    sizes: ["P", "M", "G"],
+    colors: ["Preto", "Branco", "Rosa Neon"],
+    inStock: true
+  },
+  {
+    id: "23",
+    name: "Shorts Running Air",
+    description: "Shorts ultraleve com tecnologia de ventilação para corridas longas.",
+    price: 79.90,
+    image: "https://images.unsplash.com/photo-1517438322307-e67111335442?q=80&w=2070&auto=format&fit=crop",
+    category: "running",
+    sizes: ["P", "M", "G", "GG"],
+    colors: ["Preto", "Azul Marinho"],
+    inStock: true
+  },
+  {
+    id: "24",
+    name: "Plus Size Running Legging",
+    description: "Legging plus size com tecnologia de compressão ideal para corrida.",
+    price: 159.90,
+    image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=2020&auto=format&fit=crop",
+    category: "plus-size",
+    sizes: ["G", "GG", "XG", "XXG"],
+    colors: ["Preto", "Azul Marinho", "Vinho"],
     inStock: true,
     featured: true
   }
