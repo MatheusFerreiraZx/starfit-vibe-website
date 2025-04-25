@@ -1,5 +1,6 @@
+
 import React, { useState } from 'react';
-import { Instagram, Mail, MapPin, Phone, Star, Heart } from 'lucide-react';
+import { Instagram, Mail, MapPin, Phone, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Link } from 'react-router-dom';

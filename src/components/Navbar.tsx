@@ -71,7 +71,7 @@ const Navbar = () => {
             <Link to="/produtos" className="text-starfit-gray hover:text-starfit-wine font-medium transition-colors">
               Coleções
             </Link>
-            <Link to="/#about" className="text-starfit-gray hover:text-starfit-wine font-medium transition-colors">
+            <Link to="/sobre" className="text-starfit-gray hover:text-starfit-wine font-medium transition-colors">
               Sobre
             </Link>
             <Link to="/contato" className="text-starfit-gray hover:text-starfit-wine font-medium transition-colors">
@@ -131,7 +131,7 @@ const Navbar = () => {
             <Link to="/produtos" className="text-starfit-gray hover:text-starfit-wine font-medium transition-colors py-2">
               Coleções
             </Link>
-            <Link to="/#about" className="text-starfit-gray hover:text-starfit-wine font-medium transition-colors py-2">
+            <Link to="/sobre" className="text-starfit-gray hover:text-starfit-wine font-medium transition-colors py-2">
               Sobre
             </Link>
             <Link to="/contato" className="text-starfit-gray hover:text-starfit-wine font-medium transition-colors py-2">
