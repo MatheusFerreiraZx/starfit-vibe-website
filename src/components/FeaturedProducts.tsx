@@ -2,6 +2,13 @@
 import React from 'react';
 import { products } from '@/data/products';
 import ProductCard from './ProductCard';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const FeaturedProducts = () => {
   // Get only featured products
@@ -15,11 +22,25 @@ const FeaturedProducts = () => {
           Confira nossos produtos mais populares
         </p>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {featuredProducts.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </div>
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full"
+        >
+          <CarouselContent className="-ml-2 md:-ml-4">
+            {featuredProducts.map((product) => (
+              <CarouselItem key={product.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/4">
+                <ProductCard product={product} />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <div className="hidden md:flex">
+            <CarouselPrevious className="absolute -left-16" />
+            <CarouselNext className="absolute -right-16" />
+          </div>
+        </Carousel>
       </div>
     </section>
   );
