@@ -4,8 +4,8 @@ import { products } from '@/data/products';
 import ProductCard from './ProductCard';
 
 const FeaturedProducts = () => {
-  // Get first 8 products to display
-  const featuredProducts = products.slice(0, 8);
+  // Get only featured products
+  const featuredProducts = products.filter((product) => product.featured);
 
   return (
     <section className="py-12 md:py-16 bg-white">
@@ -26,3 +26,4 @@ const FeaturedProducts = () => {
 };
 
 export default FeaturedProducts;
+

@@ -11,3 +11,4 @@ export interface Product {
   inStock: boolean;
   featured?: boolean;
 }
+
