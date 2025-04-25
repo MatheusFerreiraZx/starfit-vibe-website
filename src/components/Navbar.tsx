@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/dialog";
 import { Input } from '@/components/ui/input';
 import { products } from '@/data/products';
+import UserProfileDropdown from './UserProfileDropdown';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -88,9 +89,7 @@ const Navbar = () => {
             >
               <Search size={20} />
             </Button>
-            <Button variant="ghost" size="icon" className="text-starfit-gray hover:text-starfit-wine">
-              <User size={20} />
-            </Button>
+            <UserProfileDropdown />
             <Link to="/favoritos">
               <Button variant="ghost" size="icon" className="text-starfit-gray hover:text-starfit-wine relative">
                 <Heart size={20} />
