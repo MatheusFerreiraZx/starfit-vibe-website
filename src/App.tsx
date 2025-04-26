@@ -18,6 +18,7 @@ import { CartProvider } from "./contexts/CartContext";
 import { FavoritesProvider } from "./contexts/FavoritesContext";
 import Sobre from "./pages/Sobre";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Auth from "./pages/Auth";
 
 const queryClient = new QueryClient();
 
@@ -42,6 +43,7 @@ const App = () => (
               <Route path="/sobre" element={<Sobre />} />
               <Route path="/perfil" element={<Profile />} />
               <Route path="/configuracoes" element={<Settings />} />
+              <Route path="/auth" element={<Auth />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </BrowserRouter>
