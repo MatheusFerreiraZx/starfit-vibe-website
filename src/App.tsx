@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -12,13 +13,10 @@ import Checkout from "./pages/Checkout";
 import OrderCompleted from "./pages/OrderCompleted";
 import Contato from "./pages/Contato";
 import Favoritos from "./pages/Favoritos";
-import Profile from "./pages/Profile";
-import Settings from "./pages/Settings";
 import { CartProvider } from "./contexts/CartContext";
 import { FavoritesProvider } from "./contexts/FavoritesContext";
 import Sobre from "./pages/Sobre";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
-import Auth from "./pages/Auth";
 
 const queryClient = new QueryClient();
 
@@ -41,9 +39,6 @@ const App = () => (
               <Route path="/favoritos" element={<Favoritos />} />
               <Route path="/politica-de-privacidade" element={<PrivacyPolicy />} />
               <Route path="/sobre" element={<Sobre />} />
-              <Route path="/perfil" element={<Profile />} />
-              <Route path="/configuracoes" element={<Settings />} />
-              <Route path="/auth" element={<Auth />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </BrowserRouter>
