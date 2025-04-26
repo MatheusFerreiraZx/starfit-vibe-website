@@ -1,15 +1,19 @@
 
 import { createClient } from '@supabase/supabase-js';
 
+// Get environment variables
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
 const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
 
-if (!supabaseUrl || !supabaseAnonKey) {
-  console.error('Missing Supabase environment variables:', {
-    VITE_SUPABASE_URL: !!supabaseUrl,
-    VITE_SUPABASE_ANON_KEY: !!supabaseAnonKey
-  });
-  throw new Error('Supabase URL and Anon Key must be set in environment variables');
+// Create a wrapper function to get the client
+export function getSupabaseClient() {
+  if (!supabaseUrl || !supabaseAnonKey) {
+    console.error('Missing Supabase environment variables. Please add them in your Lovable project settings.');
+    return null;
+  }
+  
+  return createClient(supabaseUrl, supabaseAnonKey);
 }
 
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+// Export a singleton instance
+export const supabase = getSupabaseClient();

@@ -26,6 +26,16 @@ const Auth = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    if (!supabase) {
+      toast({
+        variant: "destructive",
+        title: "Erro de configuração",
+        description: "As variáveis de ambiente do Supabase não estão configuradas.",
+      });
+      return;
+    }
+    
     setLoading(true);
 
     try {
@@ -119,6 +129,15 @@ const Auth = () => {
                     : 'Já tem uma conta? Fazer login'}
                 </button>
               </div>
+              
+              {!supabase && (
+                <div className="mt-4 p-3 bg-yellow-50 border border-yellow-200 rounded-md">
+                  <p className="text-sm text-yellow-800">
+                    Atenção: As variáveis de ambiente do Supabase não estão configuradas.
+                    Por favor, adicione as variáveis VITE_SUPABASE_URL e VITE_SUPABASE_ANON_KEY nas configurações do projeto.
+                  </p>
+                </div>
+              )}
             </form>
           </CardContent>
         </Card>

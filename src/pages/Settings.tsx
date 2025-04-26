@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { supabase } from '@/lib/supabase';
 import { useToast } from '@/hooks/use-toast';
-import { Eye, EyeOff } from 'lucide-react';
+import { AlertCircle, Eye, EyeOff } from 'lucide-react';
 
 const Settings = () => {
   const [loading, setLoading] = useState(false);
@@ -18,6 +18,16 @@ const Settings = () => {
 
   const handlePasswordUpdate = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    if (!supabase) {
+      toast({
+        variant: "destructive",
+        title: "Erro de configuração",
+        description: "As variáveis de ambiente do Supabase não estão configuradas.",
+      });
+      return;
+    }
+    
     setLoading(true);
 
     try {
@@ -43,6 +53,32 @@ const Settings = () => {
       setLoading(false);
     }
   };
+
+  if (!supabase) {
+    return (
+      <Layout>
+        <div className="starfit-container py-8">
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center text-amber-600">
+                <AlertCircle className="mr-2" /> 
+                Configuração Necessária
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="mb-4">
+                As variáveis de ambiente do Supabase não estão configuradas.
+                Por favor, adicione as variáveis <code className="bg-gray-100 p-1 rounded">VITE_SUPABASE_URL</code> e <code className="bg-gray-100 p-1 rounded">VITE_SUPABASE_ANON_KEY</code> nas configurações do projeto.
+              </p>
+              <p>
+                Você pode encontrar estas informações no dashboard do Supabase, em Configurações do Projeto &gt; API.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </Layout>
+    );
+  }
 
   return (
     <Layout>

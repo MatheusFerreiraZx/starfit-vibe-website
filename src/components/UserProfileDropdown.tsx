@@ -19,6 +19,15 @@ const UserProfileDropdown = () => {
   const { toast } = useToast();
 
   const handleLogout = async () => {
+    if (!supabase) {
+      toast({
+        variant: "destructive",
+        title: "Erro de configuração",
+        description: "As variáveis de ambiente do Supabase não estão configuradas.",
+      });
+      return;
+    }
+    
     try {
       const { error } = await supabase.auth.signOut();
       if (error) throw error;
