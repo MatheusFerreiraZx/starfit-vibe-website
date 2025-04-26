@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Menu, X, Search, ShoppingBag, User, Star, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -13,7 +14,6 @@ import {
 } from "@/components/ui/dialog";
 import { Input } from '@/components/ui/input';
 import { products } from '@/data/products';
-import UserProfileDropdown from './UserProfileDropdown';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -89,7 +89,14 @@ const Navbar = () => {
             >
               <Search size={20} />
             </Button>
-            <UserProfileDropdown />
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              className="text-starfit-gray hover:text-starfit-wine"
+              onClick={() => navigate('/')}
+            >
+              <User size={20} />
+            </Button>
             <Link to="/favoritos">
               <Button variant="ghost" size="icon" className="text-starfit-gray hover:text-starfit-wine relative">
                 <Heart size={20} />
