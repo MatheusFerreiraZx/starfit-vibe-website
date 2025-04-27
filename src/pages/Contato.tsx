@@ -1,10 +1,9 @@
-
 import React from 'react';
 import Layout from '@/components/Layout';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
-import { MapPin, Phone, Mail, Instagram, Facebook } from 'lucide-react';
+import { MapPin, Phone, Mail, Instagram } from 'lucide-react';
 import WhatsAppButton from '@/components/WhatsAppButton';
 
 const Contato = () => {
@@ -70,14 +69,6 @@ const Contato = () => {
                     className="bg-starfit-wine/10 text-starfit-wine p-3 rounded-full hover:bg-starfit-wine hover:text-white transition-colors"
                   >
                     <Instagram size={20} />
-                  </a>
-                  <a 
-                    href="https://facebook.com" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="bg-starfit-wine/10 text-starfit-wine p-3 rounded-full hover:bg-starfit-wine hover:text-white transition-colors"
-                  >
-                    <Facebook size={20} />
                   </a>
                 </div>
                 
