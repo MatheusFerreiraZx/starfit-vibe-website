@@ -41,8 +41,8 @@ const Hero = () => {
             <div className="absolute -top-2 -left-2 w-24 h-24 bg-starfit-wine rounded-full opacity-20"></div>
             <div className="absolute -bottom-2 -right-2 w-32 h-32 bg-starfit-wine rounded-full opacity-20"></div>
             <img 
-              src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-              alt="Mulher em roupas fitness" 
+              src="https://images.unsplash.com/photo-1574171789970-423fbe5adcf8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+              alt="Mulher em roupas fitness elegantes" 
               className="w-full h-auto object-cover rounded-lg shadow-lg relative z-10"
             />
           </div>
