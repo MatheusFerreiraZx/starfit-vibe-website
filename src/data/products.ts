@@ -74,13 +74,13 @@ export const products: Product[] = [
   },
   {
     id: "9",
-    name: "Legging Estampada",
-    description: "Legging com estampa exclusiva e tecido de alta performance.",
-    price: 119.90,
-    image: "https://images.unsplash.com/photo-1581095063430-2ae38708e1ed?q=80&w=1974&auto=format&fit=crop",
+    name: "Legging Mesh Premium",
+    description: "Legging com detalhes em mesh transparente, perfeita para treinos intensos e estilo único.",
+    price: 149.90,
+    image: "/lovable-uploads/8840fbcf-eb73-44a2-890f-6e8eff74d50a.png",
     category: "leggings",
     sizes: ["P", "M", "G", "GG"],
-    colors: ["Estampa Tropical", "Estampa Geométrica"],
+    colors: ["Preto", "Azul", "Vinho"],
     inStock: true,
     featured: true
   },
@@ -207,7 +207,7 @@ export const products: Product[] = [
     inStock: true,
     featured: true
   },
-  {
+    {
     id: "21",
     name: "Legging Running Performance",
     description: "Legging especial para corrida com tecnologia de compressão e bolsos laterais.",
@@ -246,7 +246,7 @@ export const products: Product[] = [
     name: "Plus Size Running Legging",
     description: "Legging plus size com tecnologia de compressão ideal para corrida.",
     price: 159.90,
-    image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=2020&auto=format&fit=crop",
+    image: "/lovable-uploads/cd725864-8324-45ff-9325-cc71b2ee0907.png",
     category: "plus-size",
     sizes: ["G", "GG", "XG", "XXG"],
     colors: ["Preto", "Azul Marinho", "Vinho"],

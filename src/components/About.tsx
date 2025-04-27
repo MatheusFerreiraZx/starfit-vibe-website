@@ -35,16 +35,24 @@ const About = () => {
           </div>
           
           <div className="space-y-6">
-            <h2 className="section-title">Sobre a StarFit</h2>
-            <p className="text-starfit-gray text-lg">
-              A StarFit nasceu do desejo de proporcionar moda fitness de qualidade para mulheres de todos os tipos de corpo. 
-              Nossa missão é oferecer peças que combinam conforto, estilo e funcionalidade, permitindo que você se sinta 
-              confiante em qualquer atividade física.
-            </p>
-            <p className="text-starfit-gray text-lg">
-              Atendemos desde o tamanho P até o Plus Size, porque acreditamos que todas as mulheres merecem 
-              roupas bonitas e confortáveis para praticar seus exercícios favoritos.
-            </p>
+            <h2 className="section-title">Nossa História</h2>
+            <div className="space-y-4 text-starfit-gray">
+              <p className="text-lg leading-relaxed">
+                A StarFit nasceu do sonho e da paixão da Franciele Cristina, uma mulher que descobriu na prática de exercícios
+                físicos não apenas saúde, mas uma verdadeira transformação de vida. Após anos dedicados ao universo fitness,
+                Fran, como é carinhosamente conhecida, percebeu que sua jornada ia muito além dos treinos.
+              </p>
+              <p className="text-lg leading-relaxed">
+                "Quando comecei a treinar, percebi que não era apenas meu corpo que estava mudando, mas minha autoestima,
+                minha confiança e minha forma de ver o mundo", compartilha Franciele. Foi dessa transformação pessoal que
+                surgiu o desejo de ajudar outras mulheres a se sentirem poderosas e confiantes em suas jornadas fitness.
+              </p>
+              <p className="text-lg leading-relaxed">
+                Com um olhar atento às necessidades de mulheres reais, Franciele criou a StarFit com a missão de oferecer
+                roupas que combinam conforto, qualidade e estilo para todos os tipos de corpo. Do tamanho P ao Plus Size,
+                cada peça é pensada para fazer você se sentir incrível em todos os momentos.
+              </p>
+            </div>
             
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8">
               {features.map((feature, index) => (

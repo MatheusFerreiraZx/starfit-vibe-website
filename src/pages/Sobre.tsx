@@ -26,25 +26,35 @@ const Sobre = () => {
     <Layout>
       <div className="starfit-container py-16">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl font-bold text-starfit-wine mb-8">Sobre a StarFit</h1>
+          <h1 className="text-4xl font-bold text-starfit-wine mb-8">Nossa História</h1>
           
           <div className="space-y-8">
-            <section>
-              <h2 className="text-2xl font-semibold text-starfit-gray mb-4">Nossa História</h2>
-              <p className="text-starfit-gray text-lg">
-                A StarFit nasceu do desejo de proporcionar moda fitness de qualidade para mulheres 
-                de todos os tipos de corpo. Nossa missão é oferecer peças que combinam conforto, 
-                estilo e funcionalidade, permitindo que você se sinta confiante em qualquer 
-                atividade física.
+            <section className="prose prose-lg">
+              <h2 className="text-2xl font-semibold text-starfit-gray mb-4">A Jornada da Franciele</h2>
+              <p className="text-starfit-gray text-lg leading-relaxed">
+                A história da StarFit começou com um sonho e muita determinação. Franciele Cristina, nossa fundadora,
+                descobriu no universo fitness muito mais do que exercícios - encontrou um caminho para transformação
+                pessoal e autoconhecimento.
+              </p>
+              <p className="text-starfit-gray text-lg leading-relaxed">
+                Há anos, quando iniciou sua jornada fitness, Fran enfrentou os mesmos desafios que muitas mulheres
+                encontram: a busca por roupas que fizessem ela se sentir confortável e confiante durante os treinos.
+                Foi através de sua própria experiência de transformação que nasceu o desejo de criar algo especial
+                para outras mulheres.
+              </p>
+              <p className="text-starfit-gray text-lg leading-relaxed">
+                "Cada treino me mostrava que eu era capaz de superar meus limites, e isso mudou completamente minha
+                autoestima e a forma como eu me via. Quero que todas as mulheres possam sentir essa mesma confiança
+                e poder", compartilha Franciele com paixão.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-semibold text-starfit-gray mb-4">Nossa Missão</h2>
-              <p className="text-starfit-gray text-lg">
-                Queremos democratizar a moda fitness, oferecendo produtos de qualidade que atendam 
-                às necessidades de todas as mulheres. Do tamanho P ao Plus Size, acreditamos que 
-                todas merecem se sentir bonitas e confortáveis durante seus exercícios.
+              <p className="text-starfit-gray text-lg leading-relaxed">
+                Inspirada por sua própria jornada de transformação, Franciele criou a StarFit com uma missão clara:
+                proporcionar roupas fitness que façam todas as mulheres se sentirem poderosas e confiantes, independente
+                do seu tipo físico ou estágio em sua jornada fitness.
               </p>
             </section>
 
@@ -61,11 +71,11 @@ const Sobre = () => {
             </div>
 
             <section className="mt-12">
-              <h2 className="text-2xl font-semibold text-starfit-gray mb-4">Nosso Compromisso</h2>
-              <p className="text-starfit-gray text-lg">
-                Estamos comprometidos com a qualidade, sustentabilidade e satisfação de nossas 
-                clientes. Cada peça é cuidadosamente selecionada e testada para garantir o máximo 
-                de conforto e durabilidade.
+              <h2 className="text-2xl font-semibold text-starfit-gray mb-4">Nossos Valores</h2>
+              <p className="text-starfit-gray text-lg leading-relaxed">
+                Sob a liderança apaixonada de Franciele, a StarFit se compromete com a qualidade, inclusão e
+                bem-estar de nossas clientes. Cada peça é cuidadosamente selecionada pensando no conforto e na
+                confiança que queremos proporcionar a todas as mulheres em sua jornada fitness.
               </p>
             </section>
           </div>
