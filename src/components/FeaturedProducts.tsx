@@ -36,10 +36,8 @@ const FeaturedProducts = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <div className="hidden md:flex">
-            <CarouselPrevious className="absolute -left-16" />
-            <CarouselNext className="absolute -right-16" />
-          </div>
+          <CarouselPrevious className="absolute left-0 md:left-4 top-1/2 -translate-y-1/2 z-10" />
+          <CarouselNext className="absolute right-0 md:right-4 top-1/2 -translate-y-1/2 z-10" />
         </Carousel>
       </div>
     </section>
