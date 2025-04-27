@@ -48,7 +48,7 @@ const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 bg-white shadow-sm">
       <div className="bg-starfit-wine text-white py-2 text-center text-sm">
-        <p>Frete grátis para compras acima de R$299 | Pague em até 6x sem juros</p>
+        <p>Frete grátis para compras acima de R$199 | Pague em até 6x sem juros | Enviamos para todo o Brasil</p>
       </div>
       <div className="starfit-container">
         <div className="flex items-center justify-between h-20">
