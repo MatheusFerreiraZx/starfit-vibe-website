@@ -30,29 +30,28 @@ const Sobre = () => {
           
           <div className="space-y-8">
             <section className="prose prose-lg">
-              <h2 className="text-2xl font-semibold text-starfit-gray mb-4">A Jornada da Franciele</h2>
+              <h2 className="text-2xl font-semibold text-starfit-gray mb-4">O Início da StarFit</h2>
               <p className="text-starfit-gray text-lg leading-relaxed">
-                A história da StarFit começou com um sonho e muita determinação. Franciele Cristina, nossa fundadora,
-                descobriu no universo fitness muito mais do que exercícios - encontrou um caminho para transformação
-                pessoal e autoconhecimento.
+                A história da StarFit começou com um sonho e muita determinação. Nossa marca nasceu da paixão 
+                pelo universo fitness e da vontade de transformar a maneira como as pessoas se relacionam com 
+                a moda esportiva.
               </p>
               <p className="text-starfit-gray text-lg leading-relaxed">
-                Há anos, quando iniciou sua jornada fitness, Fran enfrentou os mesmos desafios que muitas mulheres
-                encontram: a busca por roupas que fizessem ela se sentir confortável e confiante durante os treinos.
-                Foi através de sua própria experiência de transformação que nasceu o desejo de criar algo especial
-                para outras mulheres.
+                Há anos, quando iniciamos nossa jornada no mundo fitness, enfrentamos os mesmos desafios que muitas 
+                pessoas encontram: a busca por roupas que fizessem nos sentir confortáveis e confiantes durante os treinos.
+                Foi através dessa experiência que nasceu o desejo de criar algo especial para outras pessoas.
               </p>
               <p className="text-starfit-gray text-lg leading-relaxed">
-                "Cada treino me mostrava que eu era capaz de superar meus limites, e isso mudou completamente minha
-                autoestima e a forma como eu me via. Quero que todas as mulheres possam sentir essa mesma confiança
-                e poder", compartilha Franciele com paixão.
+                "Cada treino nos mostra que somos capazes de superar nossos limites, e isso muda completamente nossa
+                autoestima e a forma como nos vemos. Queremos que todos possam sentir essa mesma confiança
+                e poder", compartilhamos com paixão esse pensamento diariamente.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-semibold text-starfit-gray mb-4">Nossa Missão</h2>
               <p className="text-starfit-gray text-lg leading-relaxed">
-                Inspirada por sua própria jornada de transformação, Franciele criou a StarFit com uma missão clara:
+                Inspirada pela jornada de transformação que o fitness proporciona, a StarFit foi criada com uma missão clara:
                 proporcionar roupas fitness que façam todas as mulheres se sentirem poderosas e confiantes, independente
                 do seu tipo físico ou estágio em sua jornada fitness.
               </p>
@@ -73,9 +72,9 @@ const Sobre = () => {
             <section className="mt-12">
               <h2 className="text-2xl font-semibold text-starfit-gray mb-4">Nossos Valores</h2>
               <p className="text-starfit-gray text-lg leading-relaxed">
-                Sob a liderança apaixonada de Franciele, a StarFit se compromete com a qualidade, inclusão e
-                bem-estar de nossas clientes. Cada peça é cuidadosamente selecionada pensando no conforto e na
-                confiança que queremos proporcionar a todas as mulheres em sua jornada fitness.
+                A StarFit se compromete com a qualidade, inclusão e bem-estar de nossas clientes. 
+                Cada peça é cuidadosamente selecionada pensando no conforto e na confiança que queremos 
+                proporcionar a todas as mulheres em sua jornada fitness.
               </p>
             </section>
           </div>

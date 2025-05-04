@@ -101,7 +101,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-white/20 mt-12 pt-6 text-center text-white/60 text-sm">
-          <p>© {new Date().getFullYear()} StarFit by Franciele Silva. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} StarFit. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

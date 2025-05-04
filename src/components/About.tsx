@@ -29,7 +29,7 @@ const About = () => {
             <div className="absolute -top-4 -right-4 w-64 h-64 bg-starfit-lightPink rounded-full opacity-40"></div>
             <img 
               src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-              alt="Franciele Silva" 
+              alt="Moda Fitness" 
               className="relative z-10 rounded-lg shadow-lg"
             />
           </div>
@@ -38,17 +38,17 @@ const About = () => {
             <h2 className="section-title">Nossa História</h2>
             <div className="space-y-4 text-starfit-gray">
               <p className="text-lg leading-relaxed">
-                A StarFit nasceu do sonho e da paixão da Franciele Cristina, uma mulher que descobriu na prática de exercícios
-                físicos não apenas saúde, mas uma verdadeira transformação de vida. Após anos dedicados ao universo fitness,
-                Fran, como é carinhosamente conhecida, percebeu que sua jornada ia muito além dos treinos.
+                A StarFit nasceu de uma paixão pelo universo fitness e do desejo de proporcionar 
+                experiências transformadoras através da moda esportiva. O que começou como um pequeno sonho
+                rapidamente se transformou em uma marca dedicada ao bem-estar e autoconfiança de cada cliente.
               </p>
               <p className="text-lg leading-relaxed">
-                "Quando comecei a treinar, percebi que não era apenas meu corpo que estava mudando, mas minha autoestima,
-                minha confiança e minha forma de ver o mundo", compartilha Franciele. Foi dessa transformação pessoal que
-                surgiu o desejo de ajudar outras mulheres a se sentirem poderosas e confiantes em suas jornadas fitness.
+                "Quando nos dedicamos à prática de exercícios, não é apenas o corpo que se transforma, mas também
+                nossa autoestima, nossa confiança e nossa forma de ver o mundo", é nessa filosofia que baseamos nosso 
+                trabalho diário na StarFit.
               </p>
               <p className="text-lg leading-relaxed">
-                Com um olhar atento às necessidades de mulheres reais, Franciele criou a StarFit com a missão de oferecer
+                Com um olhar atento às necessidades de mulheres reais, a StarFit foi criada com a missão de oferecer
                 roupas que combinam conforto, qualidade e estilo para todos os tipos de corpo. Do tamanho P ao Plus Size,
                 cada peça é pensada para fazer você se sentir incrível em todos os momentos.
               </p>
